@@ -6,11 +6,13 @@ export const Container = styled.div`
   max-width: 1280px;
   padding: 30px 0;
 `;
+
 export const Boxes = styled.ul`
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 20px;
   list-style: none;
+  padding-bottom: 30px;
 `;
 export const Box = styled.li``;
 export const Button = styled.button`
@@ -23,6 +25,7 @@ export const Button = styled.button`
   border: 1px solid #e2e8f0;
   border-radius: 8px;
   cursor: pointer;
+  background-color: ${({ isActive }) => (isActive ? "#eff6ff" : "transparent")};
   &:focus {
     background: #eff6ff;
     border: none;

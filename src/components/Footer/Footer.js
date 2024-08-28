@@ -26,7 +26,7 @@ function Footer() {
         <Container>
           <Items>
             <Item1>
-              <Logo>
+              <Logo to="/">
                 <Image
                   src={require("../../assets/icons/logo-big.svg").default}
                   alt="#"

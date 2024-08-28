@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const CategoryContainer = styled.div``;
@@ -30,7 +31,8 @@ export const Widgets = styled.div`
   justify-content: space-between;
   align-items: center;
 `;
-export const Card = styled.div`
+export const Card = styled(Link)`
+  text-decoration: none;
   display: flex;
   flex-direction: column;
   justify-content: center;

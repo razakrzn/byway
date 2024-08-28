@@ -80,7 +80,7 @@ export const RatingCounts = styled.span`
   margin-right: 10px;
 `;
 export const Duration = styled.span`
-  border-left: 1.5px solid #000;
+  border-left: 1px solid #000;
   padding-left: 10px;
   font-size: 14px;
   font-weight: 300;

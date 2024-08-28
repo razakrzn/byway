@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../../components/Header/Header";
 import Sportlight from "../../components/Sportlight/Sortlight";
 import GlobalStyle from "../../assets/styles/GlobalStyle";
@@ -8,6 +8,9 @@ import Testimonials from "../../components/Testimonials/Testimonials";
 import CallToActionSection from "../../components/CallToActionSection/CallToActionSection";
 import Footer from "../../components/Footer/Footer";
 function Home() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <GlobalStyle />

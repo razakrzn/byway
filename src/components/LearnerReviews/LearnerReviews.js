@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+
 import {
   Container,
   Title,
@@ -10,8 +12,8 @@ import {
   ReviewsText,
   StarPyramid,
   Starts,
-  StarIcons,
   StarText,
+  RightSection,
   RightWrapper,
   UserProfile,
   ProfilePic,
@@ -22,8 +24,36 @@ import {
   Date,
   Paragraph,
   Icon,
+  Button,
 } from "./LearnerReviews.style";
+import StarRating from "../StarRating/StarRating";
+
 function LearnerReviews() {
+  const [courseDetails, setCourseDetails] = useState(null);
+
+  const { id } = useParams();
+
+  useEffect(() => {
+    fetch("/data.json")
+      .then((response) => response.json())
+      .then((data) => {
+        const coursesId = Number(id);
+        const filteredCourse = data.topCourses.find(
+          (course) => course.id === coursesId
+        );
+        if (filteredCourse) {
+          setCourseDetails(filteredCourse);
+        } else {
+          console.error("Product not found");
+        }
+      })
+      .catch((error) => console.log("Error fetching data:", error));
+  }, [id]);
+
+  if (!courseDetails) {
+    return <div>Loading...</div>;
+  }
+
   return (
     <>
       <Container>
@@ -37,83 +67,47 @@ function LearnerReviews() {
                   alt="star"
                 />
               </StarIcon>
-              <SpanText>4.6</SpanText>
-              <ReviewsText>146,951 reviews</ReviewsText>
+              <SpanText>{courseDetails.rating}</SpanText>
+              <ReviewsText>
+                {courseDetails.leanersTotalReviews} reviews
+              </ReviewsText>
             </Topline>
             <StarPyramid>
               <Starts>
-                <StarIcons>
-                  <Icon
-                    src={require("../../assets/icons/star.svg").default}
-                    alt="star"
-                  />
-                </StarIcons>
-                <StarIcons>
-                  <Icon
-                    src={require("../../assets/icons/star.svg").default}
-                    alt="star"
-                  />
-                </StarIcons>
-                <StarIcons>
-                  <Icon
-                    src={require("../../assets/icons/star.svg").default}
-                    alt="star"
-                  />
-                </StarIcons>
-                <StarIcons>
-                  <Icon
-                    src={require("../../assets/icons/star.svg").default}
-                    alt="star"
-                  />
-                </StarIcons>
-                <StarIcons>
-                  <Icon
-                    src={require("../../assets/icons/star.svg").default}
-                    alt="star"
-                  />
-                </StarIcons>
+                <StarRating />
               </Starts>
-              <StarText>5 out of 5</StarText>
+              <StarText></StarText>
             </StarPyramid>
           </LeftWrapper>
-          <RightWrapper>
-            <UserProfile>
-              <ProfilePic>
-                <Image
-                  src={require("../../assets/icons/span-6.svg").default}
-                  alt="User Profile"
-                />
-              </ProfilePic>
-              <Name>John Doe</Name>
-            </UserProfile>
-            <Contents>
-              <Top>
-                <StarIcon style={{ marginRight: 5 }}>
-                  <Icon
-                    src={require("../../assets/icons/star.svg").default}
-                    alt="star"
-                  />
-                </StarIcon>
-                <StarText
-                  style={{
-                    fontFamily: "Inter",
-                    fontSize: "18px",
-                    fontWeight: "600",
-                  }}
-                >
-                  5
-                </StarText>
-                <Date>Reviewed on 22nd March, 2024</Date>
-              </Top>
-              <Paragraph>
-                I was initially apprehensive, having no prior design experience.
-                But the instructor, John Doe, did an amazing job of breaking
-                down complex concepts into easily digestible modules. The video
-                lectures were engaging, and the real-world examples really
-                helped solidify my understanding.
-              </Paragraph>
-            </Contents>
-          </RightWrapper>
+          <RightSection>
+            {courseDetails.leanerReviews.map((item) => (
+              <RightWrapper>
+                <UserProfile>
+                  <ProfilePic>
+                    <Image src={item.LeanerImage} alt="User Profile" />
+                  </ProfilePic>
+                  <Name>{item.leanerName}</Name>
+                </UserProfile>
+                <Contents>
+                  <Top>
+                    <StarIcon style={{ width: "17px", marginRight: "5px" }}>
+                      <Icon
+                        src={
+                          require("../../assets/icons/Small-star.svg").default
+                        }
+                        alt="star"
+                      />
+                    </StarIcon>
+                    <StarText>{item.rating}</StarText>
+                    <Date>{item.reviewedDate}</Date>
+                  </Top>
+                  <Paragraph>{item.review}</Paragraph>
+                </Contents>
+              </RightWrapper>
+            ))}
+
+            <Button>View more Reviews</Button>
+          </RightSection>
         </Wrapper>
       </Container>
     </>

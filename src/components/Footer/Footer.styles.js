@@ -17,8 +17,8 @@ export const Items = styled.div`
 export const Item1 = styled.div`
   width: 416px;
 `;
-export const Logo = styled.span`
-  display: block;
+export const Logo = styled(Link)`
+  display: inline-block;
   width: 111px;
   margin-bottom: 20px;
 `;

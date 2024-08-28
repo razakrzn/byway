@@ -1,14 +1,13 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 90%;
-  margin: 0 auto;
-  max-width: 1280px;
-  padding: 30px 0;
+  // width: 90%;
+  // margin: 0 auto;
+  // max-width: 1280px;
+  padding: 30px 0 15px;
 `;
 export const Wrapper = styled.div`
   display: flex;
-  align-items: center;
   justify-content: space-between;
 `;
 
@@ -18,24 +17,40 @@ export const Title = styled.h4`
   font-weight: 600;
 `;
 export const LeftWrapper = styled.div``;
-export const Topline = styled.div``;
+export const Topline = styled.div`
+  display: flex;
+  gap: 5px;
+  margin-bottom: 20px;
+`;
 export const StarIcon = styled.span`
   display: inline-block;
   width: 20px;
   height: 20px;
 `;
-export const SpanText = styled.span``;
-export const ReviewsText = styled.span``;
+export const SpanText = styled.span`
+  font-size: 20px;
+  font-weight: 600;
+`;
+export const ReviewsText = styled.span`
+  font-size: 14px;
+  font-weight: 400;
+  align-self: flex-end;
+  margin-left: 5px;
+`;
 export const StarPyramid = styled.div``;
 export const Starts = styled.div``;
-export const StarIcons = styled.span`
-  display: inline-block;
-  width: 20px;
-  height: 20px;
+export const StarIcons = styled.span``;
+export const StarText = styled.h5`
+  font-size: 18px;
+  font-weight: 600;
 `;
-export const StarText = styled.span``;
-export const RightWrapper = styled.div`
+export const RightSection = styled.div`
   width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+`;
+export const RightWrapper = styled.div`
   border: 1px solid #e2e8f0;
   border-radius: 16px;
   padding: 20px;
@@ -73,7 +88,7 @@ export const Top = styled.div`
   margin-bottom: 10px;
 `;
 export const Date = styled.p`
-  margin-left: 25px;
+  margin-left: 30px;
   font-size: 14px;
   font-weight: 400;
 `;
@@ -86,4 +101,17 @@ export const Icon = styled.img`
   width: 100%;
   height: auto;
   display: block;
+`;
+export const Button = styled.button`
+  display: block;
+  background: transparent;
+  width: 179px;
+  height: 48px;
+  padding: 10px 24px 10px 24px;
+  border-radius: 8px;
+  border: 1px solid #0f172a;
+  cursor: pointer;
+
+  font-size: 14px;
+  font-weight: 500;
 `;

@@ -62,12 +62,13 @@
       "instructorImage": "/assets/icons/span-8.svg",
       "instructorProfession": "UI/UX Designer",
       "aboutInstructor": "With over a decade of industry experience, Ronald brings a wealth of practical knowledge to the classroom. He has played a pivotal role in designing user-centric interfaces for renowned tech companies, ensuring seamless and engaging user experiences.",
-      "rating": 5,
-      "ratingCounts": 1200,
+      "rating": 4.6,
+      "ratingCounts": 651651,
       "duration": "22 Total Hours. 155 Lectures. Beginner",
       "category": "Development",
-      "language": "English, Spanish, Italian",
+      "language": "English, Spanish, Italian, German",
       "reviews": 40445,
+      "leanersTotalReviews": "146,951",
       "students": 500,
       "courses": 15,
       "syllabus": [
@@ -91,6 +92,29 @@
           "lessons": 7,
           "duration": "2 hours"
         }
+      ],
+      "leanerReviews": [
+        {
+          "LeanerImage": "/assets/icons/span-6.svg",
+          "leanerName": "Mark Doe",
+          "rating": 5,
+          "reviewedDate": "Reviewed on 22nd March, 2024",
+          "review": "I was initially apprehensive, having no prior design experience. But the instructor, John Doe, did an amazing job of breaking down complex concepts into easily digestible modules. The video lectures were engaging, and the real-world examples really helped solidify my understanding."
+        },
+        {
+          "LeanerImage": "/assets/icons/span-6.svg",
+          "leanerName": "Mark Doe",
+          "rating": 5,
+          "reviewedDate": "Reviewed on 22nd March, 2024",
+          "review": "I was initially apprehensive, having no prior design experience. But the instructor, John Doe, did an amazing job of breaking down complex concepts into easily digestible modules. The video lectures were engaging, and the real-world examples really helped solidify my understanding."
+        },
+        {
+          "LeanerImage": "/assets/icons/span-6.svg",
+          "leanerName": "Mark Doe",
+          "rating": 5,
+          "reviewedDate": "Reviewed on 22nd March, 2024",
+          "review": "I was initially apprehensive, having no prior design experience. But the instructor, John Doe, did an amazing job of breaking down complex concepts into easily digestible modules. The video lectures were engaging, and the real-world examples really helped solidify my understanding."
+        }
       ]
     },
     {
@@ -106,12 +130,13 @@
       "instructorImage": "/assets/icons/span-2.svg",
       "instructorProfession": "Digital Marketer",
       "aboutInstructor": "With a deep understanding of digital marketing trends, Jane has helped numerous brands enhance their online presence. Her expertise in SEO, social media, and content marketing has driven successful campaigns for top global companies.",
-      "rating": 4,
+      "rating": 4.6,
       "ratingCounts": 950,
       "duration": "60 Total Hours. 150 Lectures. Beginner",
       "category": "Marketing",
       "language": "English, Spanish, Italian, German",
       "reviews": 50000,
+      "leanersTotalReviews": "146,951",
       "students": 200,
       "courses": 20,
       "syllabus": [
@@ -136,6 +161,29 @@
           "lessons": 3,
           "duration": "1 hour"
         }
+      ],
+      "leanerReviews": [
+        {
+          "LeanerImage": "/assets/icons/span-6.svg",
+          "leanerName": "Mark Doe",
+          "rating": 5,
+          "reviewedDate": "Reviewed on 22nd March, 2024",
+          "review": "I was initially apprehensive, having no prior design experience. But the instructor, John Doe, did an amazing job of breaking down complex concepts into easily digestible modules. The video lectures were engaging, and the real-world examples really helped solidify my understanding."
+        },
+        {
+          "LeanerImage": "/assets/icons/span-6.svg",
+          "leanerName": "Mark Doe",
+          "rating": 5,
+          "reviewedDate": "Reviewed on 22nd March, 2024",
+          "review": "I was initially apprehensive, having no prior design experience. But the instructor, John Doe, did an amazing job of breaking down complex concepts into easily digestible modules. The video lectures were engaging, and the real-world examples really helped solidify my understanding."
+        },
+        {
+          "LeanerImage": "/assets/icons/span-6.svg",
+          "leanerName": "Mark Doe",
+          "rating": 5,
+          "reviewedDate": "Reviewed on 22nd March, 2024",
+          "review": "I was initially apprehensive, having no prior design experience. But the instructor, John Doe, did an amazing job of breaking down complex concepts into easily digestible modules. The video lectures were engaging, and the real-world examples really helped solidify my understanding."
+        }
       ]
     },
     {
@@ -151,12 +199,13 @@
       "instructorImage": "/assets/icons/span-3.svg",
       "instructorProfession": "Graphic Designer",
       "aboutInstructor": "Emily is a seasoned graphic designer with a passion for creative visual communication. She has worked with leading design studios, crafting visually appealing designs that resonate with audiences across various industries.",
-      "rating": 5,
+      "rating": 4.6,
       "ratingCounts": 800,
       "duration": "40 Total Hours. 100 Lectures. Intermediate",
       "category": "Design",
       "language": "English, Spanish, Italian, German",
       "reviews": 45000,
+      "leanersTotalReviews": "146,951",
       "students": 300,
       "courses": 18,
       "syllabus": [
@@ -185,6 +234,29 @@
           "lessons": 3,
           "duration": "1 hour"
         }
+      ],
+      "leanerReviews": [
+        {
+          "LeanerImage": "/assets/icons/span-6.svg",
+          "leanerName": "Mark Doe",
+          "rating": 5,
+          "reviewedDate": "Reviewed on 22nd March, 2024",
+          "review": "I was initially apprehensive, having no prior design experience. But the instructor, John Doe, did an amazing job of breaking down complex concepts into easily digestible modules. The video lectures were engaging, and the real-world examples really helped solidify my understanding."
+        },
+        {
+          "LeanerImage": "/assets/icons/span-6.svg",
+          "leanerName": "Mark Doe",
+          "rating": 5,
+          "reviewedDate": "Reviewed on 22nd March, 2024",
+          "review": "I was initially apprehensive, having no prior design experience. But the instructor, John Doe, did an amazing job of breaking down complex concepts into easily digestible modules. The video lectures were engaging, and the real-world examples really helped solidify my understanding."
+        },
+        {
+          "LeanerImage": "/assets/icons/span-6.svg",
+          "leanerName": "Mark Doe",
+          "rating": 5,
+          "reviewedDate": "Reviewed on 22nd March, 2024",
+          "review": "I was initially apprehensive, having no prior design experience. But the instructor, John Doe, did an amazing job of breaking down complex concepts into easily digestible modules. The video lectures were engaging, and the real-world examples really helped solidify my understanding."
+        }
       ]
     },
     {
@@ -206,6 +278,7 @@
       "category": "Programming",
       "language": "English, Spanish, Italian, German",
       "reviews": 48000,
+      "leanersTotalReviews": "146,951",
       "students": 600,
       "courses": 10,
       "syllabus": [
@@ -233,6 +306,29 @@
           "title": "Advanced Python Topics",
           "lessons": 3,
           "duration": "1 hour"
+        }
+      ],
+      "leanerReviews": [
+        {
+          "LeanerImage": "/assets/icons/span-6.svg",
+          "leanerName": "Mark Doe",
+          "rating": 5,
+          "reviewedDate": "Reviewed on 22nd March, 2024",
+          "review": "I was initially apprehensive, having no prior design experience. But the instructor, John Doe, did an amazing job of breaking down complex concepts into easily digestible modules. The video lectures were engaging, and the real-world examples really helped solidify my understanding."
+        },
+        {
+          "LeanerImage": "/assets/icons/span-6.svg",
+          "leanerName": "Mark Doe",
+          "rating": 5,
+          "reviewedDate": "Reviewed on 22nd March, 2024",
+          "review": "I was initially apprehensive, having no prior design experience. But the instructor, John Doe, did an amazing job of breaking down complex concepts into easily digestible modules. The video lectures were engaging, and the real-world examples really helped solidify my understanding."
+        },
+        {
+          "LeanerImage": "/assets/icons/span-6.svg",
+          "leanerName": "Mark Doe",
+          "rating": 5,
+          "reviewedDate": "Reviewed on 22nd March, 2024",
+          "review": "I was initially apprehensive, having no prior design experience. But the instructor, John Doe, did an amazing job of breaking down complex concepts into easily digestible modules. The video lectures were engaging, and the real-world examples really helped solidify my understanding."
         }
       ]
     }

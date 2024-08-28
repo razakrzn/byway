@@ -40,7 +40,7 @@ import {
   IconLink,
 } from "./SportlightOfDetails.styles";
 import { useParams } from "react-router-dom";
-import StarRating from "../StarRating/StarRating";
+import SmallStarRating from "../SmallStarRating/SmallStarRating";
 function SportlightOfDetails() {
   const [courseDetails, setCourseDetails] = useState(null); // Initialize with null
   const { id } = useParams();
@@ -106,7 +106,7 @@ function SportlightOfDetails() {
           <InfoWrapper>
             <Rating>{courseDetails.rating}</Rating>
             <Star>
-              <StarRating rating={courseDetails.rating} />
+              <SmallStarRating rating={5} />
             </Star>
             <RatingCounts>({courseDetails.ratingCounts} rating)</RatingCounts>
             <Duration>{courseDetails.duration}</Duration>
