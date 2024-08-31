@@ -16,7 +16,11 @@ function StarRating({ rating }) {
     );
   }
 
-  return <div style={{ display: "flex", gap: "2px" }}>{stars}</div>;
+  return (
+    <div style={{ display: "flex", gap: "2px", paddingBottom: "3px" }}>
+      {stars}
+    </div>
+  );
 }
 
 export default StarRating;

@@ -1,10 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
-  // width: 90%;
-  // margin: 0 auto;
-  // max-width: 1280px;
-`;
+export const Container = styled.div``;
 export const TextWrapper = styled.div`
   width: 65%;
   border-top: 1px solid #e2e8f0;
@@ -13,6 +9,11 @@ export const TextWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 30px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    gap: 25px;
+  }
 `;
 export const TopSection = styled.div``;
 export const BottomSection = styled.div``;
@@ -22,9 +23,18 @@ export const Title = styled.h4`
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 8px;
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
 `;
 export const Paraghraph = styled.p`
   font-size: 16px;
   font-weight: 400;
   line-height: 25.6px;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+    line-height: 22.6px;
+  }
 `;

@@ -9,12 +9,20 @@ export const Wrapper = styled.div`
   width: 65%;
   padding: 30px 0 23px;
   border-bottom: 1px solid #e2e8f0;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 export const Title = styled.h4`
   display: inline-block;
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 20px;
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
 `;
 export const Table = styled.div`
   width: 95%;
@@ -43,11 +51,19 @@ export const FirstColomn = styled.div`
   align-items: center;
   gap: 20px;
 `;
-export const IconSpan = styled.span``;
-export const Icon = styled.img``;
+export const IconSpan = styled.span`
+  width: 12px;
+`;
+export const Icon = styled.img`
+  width: 100%;
+  display: block;
+`;
 export const SubTitle = styled.h5`
   font-size: 18px;
   font-weight: 600;
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
 `;
 export const SecondColumn = styled.div`
   display: inline-flex;

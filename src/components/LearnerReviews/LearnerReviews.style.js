@@ -1,9 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  // width: 90%;
-  // margin: 0 auto;
-  // max-width: 1280px;
   padding: 30px 0 15px;
 `;
 export const Wrapper = styled.div`
@@ -54,6 +51,11 @@ export const RightWrapper = styled.div`
   padding: 22px;
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 980px) {
+    flex-direction: column;
+    padding: 20px;
+  }
 `;
 export const UserProfile = styled.div`
   width: 100%;
@@ -61,6 +63,10 @@ export const UserProfile = styled.div`
   display: flex;
   align-items: center;
   gap: 15px;
+
+  @media (max-width: 980px) {
+    margin-bottom: 20px;
+  }
 `;
 export const ProfilePic = styled.span`
   display: inline-block;
@@ -84,6 +90,9 @@ export const Top = styled.div`
   display: flex;
   align-items: center;
   margin-bottom: 10px;
+  @media (max-width: 980px) {
+    margin-bottom: 8px;
+  }
 `;
 export const Date = styled.p`
   margin-left: 30px;
@@ -94,6 +103,10 @@ export const Paragraph = styled.p`
   font-size: 16px;
   font-weight: 400;
   line-height: 25.6px;
+
+  @media (max-width: 980px) {
+    font-size: 14px;
+  }
 `;
 export const Icon = styled.img`
   width: 100%;

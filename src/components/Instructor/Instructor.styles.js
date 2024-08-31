@@ -1,29 +1,42 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
-  // width: 90%;
-  // margin: 0 auto;
-  // max-width: 1280px;
-`;
+export const Container = styled.div``;
 export const Wrapper = styled.div`
   width: 65%;
   border-bottom: 1px solid #e2e8f0;
   padding: 30px 0;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 export const Title = styled.h4`
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 20px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
 `;
 export const Name = styled.h4`
   font-size: 20px;
   font-weight: 600;
   color: #2563eb;
   margin-bottom: 8px;
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
 `;
 export const Profession = styled.h6`
   font-size: 16px;
   font-weight: 400;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
 `;
 export const ProfileContainer = styled.div`
   display: flex;
@@ -70,9 +83,18 @@ export const Text = styled.span`
   font-size: 14px;
   font-weight: 400;
   color: #0f172a;
+
+  @media (max-width: 768px) {
+    font-size: 13px;
+  }
 `;
 export const Paragraph = styled.p`
   font-size: 16px;
   font-weight: 400;
   line-height: 25.6px;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+    line-height: 22.6px;
+  }
 `;

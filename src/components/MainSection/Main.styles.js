@@ -12,6 +12,10 @@ export const Boxes = styled.ul`
   gap: 20px;
   list-style: none;
   padding: 30px 0 25px;
+
+  @media (max-width: 768px) {
+    padding: 30px 0;
+  }
 `;
 export const Box = styled.li``;
 export const Button = styled.button`
