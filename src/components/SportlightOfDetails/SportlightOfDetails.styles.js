@@ -19,6 +19,10 @@ export const Container = styled.div`
   @media (max-width: 768px) {
     flex-wrap: wrap;
   }
+
+  @media (max-width: 480px) {
+    padding: 30px 0 30px;
+  }
 `;
 export const NavContainer = styled.div`
   margin-bottom: 50px;
@@ -30,6 +34,14 @@ export const NavContainer = styled.div`
   @media (max-width: 768px) {
     margin-bottom: 25px;
   }
+
+  @media (max-width: 480px) {
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 320px) {
+    display: none;
+  }
 `;
 export const Ul = styled.ul`
   list-style: none;
@@ -37,7 +49,8 @@ export const Ul = styled.ul`
   align-items: center;
   gap: 25px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 480px) {
+    gap: 15px;
   }
 `;
 export const List = styled.li``;
@@ -49,11 +62,20 @@ export const Navlink = styled(NavLink)`
   &:last-child {
     color: #2563eb;
   }
+
+  @media (max-width: 480px) {
+    font-size: 12px;
+  }
 `;
 export const Arrow = styled.span`
   display: inline-block;
   width: 6px;
   margin-left: 20px;
+
+  @media (max-width: 480px) {
+    width: 5px;
+    margin-left: 15px;
+  }
 `;
 export const Icon = styled.img`
   width: 100%;
@@ -78,6 +100,10 @@ export const Heading = styled.h1`
   @media (max-width: 768px) {
     font-size: 32px;
   }
+
+  @media (max-width: 480px) {
+    font-size: 28px;
+  }
 `;
 export const Paragraph = styled.p`
   width: 90%;
@@ -91,17 +117,38 @@ export const Paragraph = styled.p`
     line-height: 22.6px;
     margin: 15px 0;
   }
+
+  @media (max-width: 480px) {
+    font-size: 12px;
+    line-height: 18px;
+    margin: 10px 0;
+  }
 `;
 export const InfoWrapper = styled.div`
   display: flex;
   align-items: center;
   margin: 25px 0;
+
+  @media (max-width: 480px) {
+    margin: 15px 0;
+  }
+
+  @media (max-width: 320px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
 `;
 export const Rating = styled.span`
   font-size: 16px;
   font-weight: 500;
   color: #fec84b;
   margin-right: 8px;
+
+  @media (max-width: 480px) {
+    margin-right: 4px;
+    font-size: 14px;
+  }
 `;
 export const Star = styled.span`
   margin-right: 4px;
@@ -119,6 +166,11 @@ export const RatingCounts = styled.span`
     font-weight: 400;
     font-size: 13px;
   }
+
+  @media (max-width: 480px) {
+    margin-right: 10px;
+    font-size: 11px;
+  }
 `;
 export const Duration = styled.span`
   border-left: 1px solid #000;
@@ -128,6 +180,16 @@ export const Duration = styled.span`
   @media (max-width: 768px) {
     font-weight: 400;
     font-size: 13px;
+  }
+
+  @media (max-width: 480px) {
+    margin-right: 0;
+    font-size: 11px;
+  }
+
+  @media (max-width: 320px) {
+    border: none;
+    padding: 0;
   }
 `;
 export const FounderWrapper = styled.div`
@@ -157,6 +219,10 @@ export const LanguageWrapper = styled.div`
   margin-top: 20px;
   @media (max-width: 768px) {
     margin: 20px 0;
+  }
+
+  @media (max-width: 480px) {
+    margin: 15px 0;
   }
 `;
 
@@ -202,6 +268,10 @@ export const TopSection = styled.div`
     gap: 20px;
     padding: 20px;
   }
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+  }
 `;
 
 export const ImageWrapper = styled.div`
@@ -214,7 +284,12 @@ export const ImageWrapper = styled.div`
     height: 167px;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 600px) {
+    height: 134px;
+  }
+
+  @media (max-width: 480px) {
+    height: 167px;
   }
 `;
 export const Image = styled.img`
@@ -231,6 +306,10 @@ export const PriceSection = styled.div`
 
   @media (max-width: 768px) {
     margin: 0 0 25px;
+  }
+
+  @media (max-width: 600px) {
+    margin: 0 0 15px;
   }
 `;
 
@@ -262,6 +341,11 @@ export const CartButton = styled.button`
   border: none;
   margin-bottom: 15px;
   cursor: pointer;
+
+  @media (max-width: 600px) {
+    height: 40px;
+    margin-bottom: 10px;
+  }
 `;
 export const BuyButton = styled(Link)`
   display: inline-flex;
@@ -278,6 +362,10 @@ export const BuyButton = styled(Link)`
   color: #0f172a;
   text-align: center;
   box-sizing: border-box;
+
+  @media (max-width: 600px) {
+    height: 40px;
+  }
 `;
 export const MediaSection = styled.div`
   padding: 25px 20px;
@@ -289,6 +377,10 @@ export const MediaSection = styled.div`
 export const SubTitle = styled.h4`
   font-size: 16px;
   font-weight: 500;
+
+  @media (max-width: 480px) {
+    font-size: 14px;
+  }
 `;
 export const MeadiaIcons = styled.ul`
   margin-top: 12px;
@@ -296,6 +388,11 @@ export const MeadiaIcons = styled.ul`
   display: flex;
   align-items: center;
   gap: 15px;
+
+  @media (max-width: 320px) {
+    gap: 0;
+    justify-content: space-between;
+  }
 `;
 export const IconList = styled.li``;
 export const IconLink = styled.a`
@@ -305,4 +402,15 @@ export const IconLink = styled.a`
   padding: 8px;
   border-radius: 50%;
   border: 4px solid rgba(226, 232, 240, 0.5);
+
+  @media (max-width: 480px) {
+    border: 3px solid rgba(226, 232, 240, 0.5);
+  }
+
+  @media (max-width: 320px) {
+    width: 20px;
+    height: 20px;
+    padding: 8px;
+    border: 2px solid rgba(226, 232, 240, 0.5);
+  }
 `;

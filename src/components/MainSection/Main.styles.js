@@ -7,7 +7,8 @@ export const Container = styled.div`
 `;
 
 export const Boxes = styled.ul`
-  display: inline-flex;
+  width: 100%;
+  display: flex;
   align-items: center;
   gap: 20px;
   list-style: none;
@@ -16,15 +17,27 @@ export const Boxes = styled.ul`
   @media (max-width: 768px) {
     padding: 30px 0;
   }
+
+  @media (max-width: 600px) {
+    justify-content: space-between;
+  }
+
+  @media (max-width: 320px) {
+    flex-wrap: wrap;
+  }
 `;
-export const Box = styled.li``;
+export const Box = styled.li`
+  @media (max-width: 320px) {
+    width: calc(50% - 10px);
+  }
+`;
 export const Button = styled.button`
   width: 148px;
   height: 57px;
   background-color: transparent;
   font-size: 14px;
   font-weight: 400;
-  padding: 18px, 21px, 18px, 21px;
+  padding: 18px 21px;
   border: 1px solid #e2e8f0;
   border-radius: 8px;
   cursor: pointer;
@@ -34,7 +47,15 @@ export const Button = styled.button`
     border: none;
   }
 
-  @media (max-width: 768px) {
-    padding: 18px, 21px, 18px, 21px;
+  @media (max-width: 600px) {
+    padding: 15px 20px;
+    width: 120px;
+    height: 50px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 12px;
+    padding: 10px 20px;
+    width: 100%;
   }
 `;

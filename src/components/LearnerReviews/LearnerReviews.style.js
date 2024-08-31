@@ -2,6 +2,10 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   padding: 30px 0 15px;
+
+  @media (max-width: 480px) {
+    padding: 15px 0;
+  }
 `;
 export const Wrapper = styled.div`
   display: flex;
@@ -10,22 +14,47 @@ export const Wrapper = styled.div`
   @media (max-width: 768px) {
     gap: 30px;
   }
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+  }
 `;
 
 export const Title = styled.h4`
   margin-bottom: 30px;
   font-size: 20px;
   font-weight: 600;
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
 `;
 export const LeftWrapper = styled.div`
   @media (max-width: 768px) {
     width: 35%;
+  }
+
+  @media (max-width: 600px) {
+    width: 50%;
+  }
+
+  @media (max-width: 480px) {
+    width: 100%;
   }
 `;
 export const Topline = styled.div`
   display: flex;
   gap: 5px;
   margin-bottom: 20px;
+
+  @media (max-width: 480px) {
+    align-items: center;
+  }
 `;
 export const StarIcon = styled.span`
   display: inline-block;
@@ -35,12 +64,24 @@ export const StarIcon = styled.span`
 export const SpanText = styled.span`
   font-size: 20px;
   font-weight: 600;
+
+  @media (max-width: 480px) {
+    font-size: 16px;
+  }
 `;
 export const ReviewsText = styled.span`
   font-size: 14px;
   font-weight: 400;
   align-self: flex-end;
   margin-left: 5px;
+
+  @media (max-width: 480px) {
+    align-self: center;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 13px;
+  }
 `;
 export const StarPyramidContainer = styled.div``;
 export const StarText = styled.h5`
@@ -96,6 +137,10 @@ export const Image = styled.img`
 export const Name = styled.h5`
   font-size: 18px;
   font-weight: 600;
+
+  @media (max-width: 480px) {
+    font-size: 16px;
+  }
 `;
 export const Contents = styled.div``;
 export const Top = styled.div`
@@ -141,4 +186,11 @@ export const Button = styled.button`
 
   font-size: 14px;
   font-weight: 500;
+
+  @media (max-width: 480px) {
+    margin: 0 auto;
+    width: 150px;
+    font-size: 13px;
+    padding: 8px 16px 8px 16px;
+  }
 `;

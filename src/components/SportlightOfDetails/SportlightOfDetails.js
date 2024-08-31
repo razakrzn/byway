@@ -90,11 +90,15 @@ function SportlightOfDetails() {
             <Heading>{courseDetails.title}</Heading>
             <Paragraph>{courseDetails.description}</Paragraph>
             <InfoWrapper>
-              <Rating>{courseDetails.rating}</Rating>
-              <Star>
-                <SmallStarRating rating={5} />
-              </Star>
-              <RatingCounts>({courseDetails.ratingCounts} rating)</RatingCounts>
+              <div style={{ display: "flex" }}>
+                <Rating>{courseDetails.rating}</Rating>
+                <Star>
+                  <SmallStarRating rating={5} />
+                </Star>
+                <RatingCounts>
+                  ({courseDetails.ratingCounts} rating)
+                </RatingCounts>
+              </div>
               <Duration>{courseDetails.duration}</Duration>
             </InfoWrapper>
             <FounderWrapper>

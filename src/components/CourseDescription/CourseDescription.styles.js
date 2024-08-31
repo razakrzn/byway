@@ -14,6 +14,11 @@ export const TextWrapper = styled.div`
     width: 100%;
     gap: 25px;
   }
+
+  @media (max-width: 480px) {
+    padding: 15px 0;
+    gap: 15px;
+  }
 `;
 export const TopSection = styled.div``;
 export const BottomSection = styled.div``;
@@ -27,6 +32,10 @@ export const Title = styled.h4`
   @media (max-width: 768px) {
     font-size: 18px;
   }
+
+  @media (max-width: 480px) {
+    font-size: 16px;
+  }
 `;
 export const Paraghraph = styled.p`
   font-size: 16px;
@@ -36,5 +45,10 @@ export const Paraghraph = styled.p`
   @media (max-width: 768px) {
     font-size: 14px;
     line-height: 22.6px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 12px;
+    line-height: 18px;
   }
 `;

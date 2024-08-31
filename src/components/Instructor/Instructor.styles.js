@@ -9,6 +9,10 @@ export const Wrapper = styled.div`
   @media (max-width: 768px) {
     width: 100%;
   }
+
+  @media (max-width: 480px) {
+    padding: 15px 0;
+  }
 `;
 export const Title = styled.h4`
   font-size: 20px;
@@ -18,6 +22,10 @@ export const Title = styled.h4`
   @media (max-width: 768px) {
     margin-bottom: 15px;
     font-size: 18px;
+  }
+  @media (max-width: 480px) {
+    font-size: 18px;
+    margin-bottom: 15px;
   }
 `;
 export const Name = styled.h4`
@@ -29,6 +37,10 @@ export const Name = styled.h4`
   @media (max-width: 768px) {
     font-size: 18px;
   }
+
+  @media (max-width: 480px) {
+    font-size: 16px;
+  }
 `;
 export const Profession = styled.h6`
   font-size: 16px;
@@ -37,12 +49,20 @@ export const Profession = styled.h6`
   @media (max-width: 768px) {
     font-size: 16px;
   }
+
+  @media (max-width: 480px) {
+    font-size: 14px;
+  }
 `;
 export const ProfileContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 20px;
   margin: 20px 0;
+
+  @media (max-width: 480px) {
+    margin: 15px 0;
+  }
 `;
 export const ProfilePic = styled.span`
   display: inline-block;
@@ -50,6 +70,11 @@ export const ProfilePic = styled.span`
   height: 120px;
   border-radius: 50%;
   overflow: hidden;
+
+  @media (max-width: 480px) {
+    width: 100px;
+    height: 100px;
+  }
 `;
 
 export const Image = styled.img`
@@ -73,6 +98,11 @@ export const IconSpan = styled.span`
   display: inline-block;
   width: 22px;
   height: 22px;
+
+  @media (max-width: 480px) {
+    width: 18px;
+    height: 18px;
+  }
 `;
 export const Icon = styled.img`
   width: 100%;
@@ -87,6 +117,10 @@ export const Text = styled.span`
   @media (max-width: 768px) {
     font-size: 13px;
   }
+
+  @media (max-width: 480px) {
+    font-size: 12px;
+  }
 `;
 export const Paragraph = styled.p`
   font-size: 16px;
@@ -96,5 +130,10 @@ export const Paragraph = styled.p`
   @media (max-width: 768px) {
     font-size: 14px;
     line-height: 22.6px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 13px;
+    line-height: 20px;
   }
 `;
