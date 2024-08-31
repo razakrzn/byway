@@ -33,4 +33,8 @@ export const Button = styled.button`
     background: #eff6ff;
     border: none;
   }
+
+  @media (max-width: 768px) {
+    padding: 18px, 21px, 18px, 21px;
+  }
 `;

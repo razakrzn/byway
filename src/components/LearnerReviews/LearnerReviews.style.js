@@ -6,6 +6,10 @@ export const Container = styled.div`
 export const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 768px) {
+    gap: 30px;
+  }
 `;
 
 export const Title = styled.h4`
@@ -13,7 +17,11 @@ export const Title = styled.h4`
   font-size: 20px;
   font-weight: 600;
 `;
-export const LeftWrapper = styled.div``;
+export const LeftWrapper = styled.div`
+  @media (max-width: 768px) {
+    width: 35%;
+  }
+`;
 export const Topline = styled.div`
   display: flex;
   gap: 5px;
@@ -44,6 +52,10 @@ export const RightSection = styled.div`
   display: flex;
   flex-direction: column;
   gap: 15px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 export const RightWrapper = styled.div`
   border: 1px solid #e2e8f0;
@@ -106,6 +118,10 @@ export const Paragraph = styled.p`
 
   @media (max-width: 980px) {
     font-size: 14px;
+  }
+  @media (max-width: 768px) {
+    font-size: 13px;
+    line-height: 22.6px;
   }
 `;
 export const Icon = styled.img`
