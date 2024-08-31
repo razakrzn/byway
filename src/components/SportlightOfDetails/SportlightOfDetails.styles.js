@@ -59,7 +59,7 @@ export const Paragraph = styled.p`
 export const InfoWrapper = styled.div`
   display: flex;
   align-items: center;
-  margin: 20px 0;
+  margin: 25px 0;
 `;
 export const Rating = styled.span`
   font-size: 16px;
@@ -132,7 +132,7 @@ export const PurchaseDetailsBox = styled.div`
   border-radius: 16px;
   position: absolute;
   right: 0;
-  top: 25px;
+  top: 26px;
 `;
 export const TopSection = styled.div`
   display: flex;
@@ -159,7 +159,7 @@ export const PriceSection = styled.div`
   display: flex;
   align-items: center;
   gap: 15px;
-  margin: 25px 0;
+  margin: 30px 0;
 `;
 
 export const SpecialPrice = styled.h3`
@@ -169,7 +169,7 @@ export const SpecialPrice = styled.h3`
 export const OldRate = styled.h5`
   font-size: 18px;
   font-weight: 600;
-  color: #94a3b8;
+  color: rgba(148, 163, 184, 0.5);
 `;
 export const Offer = styled.h4`
   font-size: 20px;
@@ -184,10 +184,10 @@ export const CartButton = styled.button`
   padding: 10px 24px 10px 24px;
   border-radius: 8px;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   border: none;
-  margin: 0 0 25px;
+  margin-bottom: 15px;
   cursor: pointer;
 `;
 export const BuyButton = styled(Link)`
@@ -196,22 +196,23 @@ export const BuyButton = styled(Link)`
   text-decoration: none;
   padding: 10px 24px 10px 24px;
   border-radius: 8px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   border: 1px solid #020617;
-  color: #020617;
+  color: #0f172a;
   text-align: center;
   box-sizing: border-box;
+  margin-bottom: 5px;
 `;
 export const MediaSection = styled.div`
-  padding: 20px;
+  padding: 25px 20px;
 `;
 export const SubTitle = styled.h4`
   font-size: 16px;
   font-weight: 500;
 `;
 export const MeadiaIcons = styled.ul`
-  margin-top: 10px;
+  margin-top: 12px;
   list-style: none;
   display: flex;
   align-items: center;
@@ -226,4 +227,3 @@ export const IconLink = styled.a`
   border-radius: 50%;
   border: 4px solid rgba(226, 232, 240, 0.5);
 `;
-// export const Icon = styled.img``;

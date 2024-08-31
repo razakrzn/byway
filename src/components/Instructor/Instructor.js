@@ -16,27 +16,14 @@ import {
   Text,
   Paragraph,
 } from "./Instructor.styles";
-import { useParams } from "react-router-dom";
-function Instructor() {
-  const [courseDetails, setCourseDetails] = useState(null); // Initialize with null
-  const { id } = useParams();
+import { useCourseDetails } from "../../Hooks/useCourseDetails";
 
-  useEffect(() => {
-    fetch("/data.json")
-      .then((response) => response.json())
-      .then((data) => {
-        const coursesId = Number(id);
-        const filteredCourse = data.topCourses.find(
-          (course) => course.id === coursesId
-        );
-        if (filteredCourse) {
-          setCourseDetails(filteredCourse);
-        } else {
-          console.error("Product not found");
-        }
-      })
-      .catch((error) => console.log("Error fetching data:", error));
-  }, [id]);
+function Instructor() {
+  const courseDetails = useCourseDetails();
+
+  if (!courseDetails) {
+    return <div>Loading...</div>;
+  }
 
   if (!courseDetails) {
     return <div>Loading...</div>;

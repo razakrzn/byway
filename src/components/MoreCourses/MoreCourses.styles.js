@@ -27,14 +27,15 @@ export const Widgets = styled.div`
   align-items: center;
 `;
 export const Card = styled(Link)`
+  width: calc(20% - -8px);
   text-decoration: none;
   padding: 16px;
   border-radius: 16px;
-  border: 1px;
+  border: 1px solid #e2e8f0;
   box-shadow: 0px 0px 8px 0px #3b82f61f;
 `;
 export const ImageWrapper = styled.div`
-  width: 266px;
+  width: 100%;
   height: 139px;
   border-radius: 8px;
   overflow: hidden;

@@ -69,6 +69,7 @@ export const Icon = styled.img`
 export const Text = styled.span`
   font-size: 14px;
   font-weight: 400;
+  color: #0f172a;
 `;
 export const Paragraph = styled.p`
   font-size: 16px;

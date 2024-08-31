@@ -30,7 +30,7 @@ function CallToActionSection() {
             </Paragraph>
             <LinkButton to="/action">
               Start Your Instructor Journey
-              <span>
+              <span className="icon-container">
                 <ButtonIcon
                   src={require("../../assets/icons/arrow-right.svg").default}
                   alt="icon"
@@ -48,7 +48,7 @@ function CallToActionSection() {
             </Paragraph>
             <LinkButton to="/action">
               Checkout Courses
-              <span>
+              <span className="icon-container">
                 <ButtonIcon
                   src={require("../../assets/icons/arrow-right.svg").default}
                   alt="icon"

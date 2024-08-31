@@ -7,13 +7,14 @@ export const Container = styled.div`
 `;
 export const Wrapper = styled.div`
   width: 65%;
-  padding: 30px 0;
+  padding: 30px 0 23px;
   border-bottom: 1px solid #e2e8f0;
 `;
 export const Title = styled.h4`
+  display: inline-block;
   font-size: 20px;
   font-weight: 600;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 `;
 export const Table = styled.div`
   width: 95%;
@@ -49,10 +50,20 @@ export const SubTitle = styled.h5`
   font-weight: 600;
 `;
 export const SecondColumn = styled.div`
-  width: 23%;
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 20px;
+  justify-content: space-between;
+  gap: 15px;
+
+  @media (max-width: 1280px) {
+    // width: 100%;
+  }
 `;
-export const Lessons = styled.p``;
-export const Hour = styled.p``;
+export const Lessons = styled.p`
+  font-size: 14px;
+  font-weight: 400;
+`;
+export const Hour = styled.p`
+  font-size: 14px;
+  font-weight: 400;
+`;

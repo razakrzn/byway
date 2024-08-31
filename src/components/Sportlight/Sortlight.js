@@ -26,7 +26,7 @@ function Sortlight() {
         <RightImageSection>
           <ImageWrapper>
             <Images
-              src={require("../../assets/images/image-1.jpeg")}
+              src={require("../../assets/images/image-1.png")}
               alt="Sortlight"
             />
           </ImageWrapper>

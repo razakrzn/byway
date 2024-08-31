@@ -24,7 +24,7 @@ function MoreCourses() {
     fetch("/data.json")
       .then((response) => response.json())
       .then((data) => {
-        setCourseDetails(data.topCourses);
+        setCourseDetails(data.moreCourses);
       })
       .catch((error) => console.log("Error fetching data:", error));
   }, []);
@@ -41,10 +41,10 @@ function MoreCourses() {
               <ImageWrapper>
                 <Image src={item.image} alt="image" />
               </ImageWrapper>
-              <Subheading>{item.courseName}</Subheading>
+              <Subheading>{item.subject}</Subheading>
               <Lecture>{item.instructor}</Lecture>
               <RatingStar>
-                <StarRating rating={item.rating} />
+                <StarRating rating={5} />
                 <Label>({item.ratingCounts})</Label>
               </RatingStar>
               <TimeDuration>{item.duration}</TimeDuration>

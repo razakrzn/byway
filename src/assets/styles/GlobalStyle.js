@@ -5,6 +5,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     font-family: inter;
+    box-sizing: border-box;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -34,6 +35,11 @@ const GlobalStyle = createGlobalStyle`
 .slick-list {
 }
 
+@media (max-width: 480px) {
+  .slick-slide > div {
+    margin: 0 0px; 
+  }
+}
 
 `;
 

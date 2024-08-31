@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import {
   Bg,
   Container,
@@ -39,28 +39,11 @@ import {
   IconList,
   IconLink,
 } from "./SportlightOfDetails.styles";
-import { useParams } from "react-router-dom";
 import SmallStarRating from "../SmallStarRating/SmallStarRating";
-function SportlightOfDetails() {
-  const [courseDetails, setCourseDetails] = useState(null); // Initialize with null
-  const { id } = useParams();
+import { useCourseDetails } from "../../Hooks/useCourseDetails";
 
-  useEffect(() => {
-    fetch("/data.json")
-      .then((response) => response.json())
-      .then((data) => {
-        const coursesId = Number(id);
-        const filteredCourse = data.topCourses.find(
-          (course) => course.id === coursesId
-        );
-        if (filteredCourse) {
-          setCourseDetails(filteredCourse);
-        } else {
-          console.error("Product not found");
-        }
-      })
-      .catch((error) => console.log("Error fetching data:", error));
-  }, [id]);
+function SportlightOfDetails() {
+  const courseDetails = useCourseDetails();
 
   if (!courseDetails) {
     return <div>Loading...</div>;
@@ -96,12 +79,14 @@ function SportlightOfDetails() {
               </Arrow>
             </List>
             <List>
-              <Navlink to="#">{courseDetails.subject}</Navlink>
+              <Navlink to={`/details/${courseDetails.id}`}>
+                {courseDetails.subject}
+              </Navlink>
             </List>
           </Ul>
         </NavContainer>
         <Contents>
-          <Heading>{courseDetails.subject}</Heading>
+          <Heading>{courseDetails.title}</Heading>
           <Paragraph>{courseDetails.description}</Paragraph>
           <InfoWrapper>
             <Rating>{courseDetails.rating}</Rating>
@@ -138,7 +123,7 @@ function SportlightOfDetails() {
         <PurchaseDetailsBox>
           <TopSection>
             <ImageWrapper>
-              <Image src={courseDetails.image} alt="Image" />
+              <Image src={courseDetails.image2} alt="Image" />
             </ImageWrapper>
             <PriceSection>
               <SpecialPrice>${courseDetails.offerRate}</SpecialPrice>

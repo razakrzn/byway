@@ -26,7 +26,7 @@ function Testimonials() {
   var settings1 = {
     dots: false,
     infinite: true,
-    speed: 800,
+    speed: 700,
     slidesToShow: 3,
     slidesToScroll: 4,
     initialSlide: 0,
@@ -37,12 +37,13 @@ function Testimonials() {
           slidesToShow: 3,
           slidesToScroll: 3,
           infinite: true,
-          dots: true,
+          dots: false,
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 768,
         settings: {
+          speed: 400,
           slidesToShow: 2,
           slidesToScroll: 2,
           initialSlide: 2,
@@ -51,6 +52,7 @@ function Testimonials() {
       {
         breakpoint: 480,
         settings: {
+          speed: 300,
           slidesToShow: 1,
           slidesToScroll: 1,
         },

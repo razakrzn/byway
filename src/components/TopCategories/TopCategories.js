@@ -24,7 +24,7 @@ function TopCategories() {
       .catch((error) => console.log("Error fetching data:", error));
   }, []);
   return (
-    <div>
+    <>
       <CategoryContainer>
         <HeadinWrapper>
           <Heading>Top Categories</Heading>
@@ -48,7 +48,7 @@ function TopCategories() {
           ))}
         </Widgets>
       </CategoryContainer>
-    </div>
+    </>
   );
 }
 

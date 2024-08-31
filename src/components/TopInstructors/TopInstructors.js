@@ -19,6 +19,9 @@ import {
 } from "./TopInstructors.styles";
 
 function TopInstructors() {
+  const [isSeeAllClicked, setIsSeeAllClicked] = useState(false);
+  const [isMobileView, setIsMobileView] = useState(false);
+
   const [topInstructors, setTopInstructors] = useState([]);
 
   useEffect(() => {
@@ -29,15 +32,36 @@ function TopInstructors() {
       })
       .catch((error) => console.log("Error fetching data:", error));
   }, []);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobileView(window.innerWidth <= 980);
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const handleSeeAllClick = () => {
+    setIsSeeAllClicked(!isSeeAllClicked);
+  };
+
   return (
     <>
       <CategoryContainer>
         <HeadinWrapper>
           <Heading>Top Instructors</Heading>
-          <SeeAllButton>See All</SeeAllButton>
+          <SeeAllButton onClick={handleSeeAllClick}>
+            {isSeeAllClicked ? "Show Less" : "See All"}
+          </SeeAllButton>
         </HeadinWrapper>
         <Widgets>
-          {topInstructors.map((item) => (
+          {topInstructors.slice(0, 4).map((item) => (
             <Card key={item.id}>
               <ImageWrapper>
                 <Image src={item.image} alt={item.name} />
@@ -54,6 +78,29 @@ function TopInstructors() {
               </RatingWrapper>
             </Card>
           ))}
+
+          {(isSeeAllClicked || !isMobileView) && topInstructors[4] && (
+            <Card key={topInstructors[4].id}>
+              <ImageWrapper>
+                <Image
+                  src={topInstructors[4].image}
+                  alt={topInstructors[4].name}
+                />
+              </ImageWrapper>
+              <Name>{topInstructors[4].name}</Name>
+              <Proffesion>{topInstructors[4].proffesion}</Proffesion>
+              <Line />
+              <RatingWrapper>
+                <RatingStar>
+                  <StarIcon src={topInstructors[4].icon} alt="star" />
+                  <Label>{topInstructors[4].rating}</Label>
+                </RatingStar>
+                <Subscription>
+                  {topInstructors[4].subscription} Students
+                </Subscription>
+              </RatingWrapper>
+            </Card>
+          )}
         </Widgets>
       </CategoryContainer>
     </>

@@ -25,7 +25,7 @@ function Footer() {
       <Background>
         <Container>
           <Items>
-            <Item1>
+            <Item1 className="item1">
               <Logo to="/">
                 <Image
                   src={require("../../assets/icons/logo-big.svg").default}
@@ -39,7 +39,8 @@ function Footer() {
                 educational experiences.
               </Paragraph>
             </Item1>
-            <Items2>
+
+            <Items2 className="item2">
               <Ul>
                 <Li>
                   <UlTitle>Get Help</UlTitle>
@@ -55,7 +56,7 @@ function Footer() {
                 </Li>
               </Ul>
             </Items2>
-            <Items3>
+            <Items3 className="item3">
               <Ul>
                 <Li>
                   <UlTitle>Programs</UlTitle>
@@ -77,7 +78,7 @@ function Footer() {
                 </Li>
               </Ul>
             </Items3>
-            <Items4>
+            <Items4 className="item4">
               <Ul>
                 <Li>
                   <UlTitle>Contact Us</UlTitle>

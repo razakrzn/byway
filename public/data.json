@@ -52,11 +52,13 @@
     {
       "id": 1,
       "image": "/assets/images/bg.jpg",
+      "image2": "/assets/images/Design.jpg",
       "subject": "Beginner’s Guide to Design",
+      "title": "Introduction to User Experience Design",
       "description": "This course is meticulously crafted to provide you with a foundational understanding of the principles, methodologies, and tools that drive exceptional user experiences in the digital landscape.",
       "certification": "Certified User Experience Designer",
-      "oldRate": 149.99,
-      "offerRate": 79.99,
+      "oldRate": 99.5,
+      "offerRate": 49.5,
       "offer": 50,
       "instructor": "By Ronald Richards",
       "instructorImage": "/assets/icons/span-8.svg",
@@ -64,7 +66,7 @@
       "aboutInstructor": "With over a decade of industry experience, Ronald brings a wealth of practical knowledge to the classroom. He has played a pivotal role in designing user-centric interfaces for renowned tech companies, ensuring seamless and engaging user experiences.",
       "rating": 4.6,
       "ratingCounts": 651651,
-      "duration": "22 Total Hours. 155 Lectures. Beginner",
+      "duration": "22 Total Hours. 155 Lectures. All Levels",
       "category": "Development",
       "language": "English, Spanish, Italian, German",
       "reviews": 40445,
@@ -80,7 +82,7 @@
         {
           "title": "Basics of User-Centered Design",
           "lessons": 6,
-          "duration": "1.5 hours"
+          "duration": "1 hour"
         },
         {
           "title": "Elements of User Experience",
@@ -90,7 +92,7 @@
         {
           "title": "Visual Design Principles",
           "lessons": 7,
-          "duration": "2 hours"
+          "duration": "1 hour"
         }
       ],
       "leanerReviews": [
@@ -120,7 +122,9 @@
     {
       "id": 2,
       "image": "/assets/images/digital-marketing.jpg",
-      "subject": "Digital Marketing Masterclass",
+      "image2": "/assets/images/digital-marketing.jpg",
+      "subject": "Digital Marketing",
+      "title": "Introduction to Digital Marketing ",
       "description": "Master digital marketing strategies and grow your online presence.",
       "certification": "Certified Digital Marketer",
       "oldRate": 149.99,
@@ -189,7 +193,9 @@
     {
       "id": 3,
       "image": "/assets/images/graphic-designer.jpg",
-      "subject": "Graphic Design for Beginners",
+      "image2": "/assets/images/graphic-designer.jpg",
+      "subject": "Graphic Design",
+      "title": "Introduction to Graphic Design ",
       "description": "An introductory course to graphic design using popular tools.",
       "certification": "Certified Graphic Designer",
       "oldRate": 99.99,
@@ -201,7 +207,7 @@
       "aboutInstructor": "Emily is a seasoned graphic designer with a passion for creative visual communication. She has worked with leading design studios, crafting visually appealing designs that resonate with audiences across various industries.",
       "rating": 4.6,
       "ratingCounts": 800,
-      "duration": "40 Total Hours. 100 Lectures. Intermediate",
+      "duration": "40 Total Hours. 100 Lectures. Beginner",
       "category": "Design",
       "language": "English, Spanish, Italian, German",
       "reviews": 45000,
@@ -262,7 +268,9 @@
     {
       "id": 4,
       "image": "/assets/images/python.jpg",
-      "subject": "Python Programming Essentials",
+      "image2": "/assets/images/python.jpg",
+      "subject": "Python Programming",
+      "title": "Introduction to Python Programming",
       "description": "Learn Python programming with practical examples and exercises.",
       "certification": "Certified Python Programmer",
       "oldRate": 129.99,
@@ -401,6 +409,44 @@
       "userImage": "/assets/icons/span-7.svg",
       "userName": "Jane Doe",
       "userProfession": "Designer"
+    }
+  ],
+  "moreCourses": [
+    {
+      "id": 1,
+      "image": "/assets/images/bg.jpg",
+      "subject": "Beginner’s Guide to Design",
+      "offerRate": 149.9,
+      "instructor": "By Ronald Richards",
+      "ratingCounts": 1200,
+      "duration": "22 Total Hours. 155 Lectures. All Levels"
+    },
+    {
+      "id": 1,
+      "image": "/assets/images/bg.jpg",
+      "subject": "Beginner’s Guide to Design",
+      "offerRate": 149.9,
+      "instructor": "By Ronald Richards",
+      "ratingCounts": 1200,
+      "duration": "22 Total Hours. 155 Lectures. All Levels"
+    },
+    {
+      "id": 1,
+      "image": "/assets/images/bg.jpg",
+      "subject": "Beginner’s Guide to Design",
+      "offerRate": 149.9,
+      "instructor": "By Ronald Richards",
+      "ratingCounts": 1200,
+      "duration": "22 Total Hours. 155 Lectures. All Levels"
+    },
+    {
+      "id": 1,
+      "image": "/assets/images/bg.jpg",
+      "subject": "Beginner’s Guide to Design",
+      "offerRate": 149.9,
+      "instructor": "By Ronald Richards",
+      "ratingCounts": 1200,
+      "duration": "22 Total Hours. 155 Lectures. All Levels"
     }
   ]
 }

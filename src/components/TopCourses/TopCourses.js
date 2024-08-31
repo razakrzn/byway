@@ -46,7 +46,7 @@ function TopCourses() {
               <Subheading>{item.subject}</Subheading>
               <Lecture>{item.instructor}</Lecture>
               <RatingStar>
-                <StarRating rating={item.rating} />
+                <StarRating rating={5} />
                 <Label>({item.ratingCounts})</Label>
               </RatingStar>
               <TimeDuration>{item.duration}</TimeDuration>

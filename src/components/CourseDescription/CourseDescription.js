@@ -7,27 +7,9 @@ import {
   Title,
   Paraghraph,
 } from "./CourseDescription.styles";
-import { useParams } from "react-router-dom";
+import { useCourseDetails } from "../../Hooks/useCourseDetails";
 function CourseDescription() {
-  const [courseDetails, setCourseDetails] = useState(null); // Initialize with null
-  const { id } = useParams();
-
-  useEffect(() => {
-    fetch("/data.json")
-      .then((response) => response.json())
-      .then((data) => {
-        const coursesId = Number(id);
-        const filteredCourse = data.topCourses.find(
-          (course) => course.id === coursesId
-        );
-        if (filteredCourse) {
-          setCourseDetails(filteredCourse);
-        } else {
-          console.error("Product not found");
-        }
-      })
-      .catch((error) => console.log("Error fetching data:", error));
-  }, [id]);
+  const courseDetails = useCourseDetails();
 
   if (!courseDetails) {
     return <div>Loading...</div>;

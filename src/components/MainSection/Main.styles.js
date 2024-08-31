@@ -4,7 +4,6 @@ export const Container = styled.div`
   width: 90%;
   margin: 0 auto;
   max-width: 1280px;
-  padding: 30px 0;
 `;
 
 export const Boxes = styled.ul`
@@ -12,7 +11,7 @@ export const Boxes = styled.ul`
   align-items: center;
   gap: 20px;
   list-style: none;
-  padding-bottom: 30px;
+  padding: 30px 0 25px;
 `;
 export const Box = styled.li``;
 export const Button = styled.button`

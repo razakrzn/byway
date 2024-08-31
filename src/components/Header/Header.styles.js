@@ -9,6 +9,13 @@ export const HeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 320px) {
+    flex-direction: column;
+    padding: 30px 0;
+    gap: 15px;
+    height: 100%;
+  }
 `;
 export const LogoWrapper = styled.div``;
 export const LogoLink = styled(Link)`
@@ -28,6 +35,10 @@ export const LoginContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 25px;
+
+  @media (max-width: 320px) {
+    gap: 15px;
+  }
 `;
 export const CartLink = styled(Link)``;
 export const CartIcon = styled.img`

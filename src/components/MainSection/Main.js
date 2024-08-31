@@ -17,10 +17,8 @@ function Main() {
 
   const renderComponents = () => {
     const orderedComponents = [];
-    // Push the active component to the top
     orderedComponents.push(components[activeComponent]);
 
-    // Push the other components in the original order
     Object.keys(components).forEach((key) => {
       if (key !== activeComponent) {
         orderedComponents.push(components[key]);

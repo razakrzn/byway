@@ -21,7 +21,7 @@ export const Title = styled.h4`
   font-family: Inter;
   font-size: 20px;
   font-weight: 600;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
 `;
 export const Paraghraph = styled.p`
   font-size: 16px;

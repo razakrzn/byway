@@ -10,8 +10,7 @@ import {
   StarIcon,
   SpanText,
   ReviewsText,
-  StarPyramid,
-  Starts,
+  StarPyramidContainer,
   StarText,
   RightSection,
   RightWrapper,
@@ -27,28 +26,11 @@ import {
   Button,
 } from "./LearnerReviews.style";
 import StarRating from "../StarRating/StarRating";
+import { useCourseDetails } from "../../Hooks/useCourseDetails";
+import StarPyramid from "../StarPyramid/StarPyramid";
 
 function LearnerReviews() {
-  const [courseDetails, setCourseDetails] = useState(null);
-
-  const { id } = useParams();
-
-  useEffect(() => {
-    fetch("/data.json")
-      .then((response) => response.json())
-      .then((data) => {
-        const coursesId = Number(id);
-        const filteredCourse = data.topCourses.find(
-          (course) => course.id === coursesId
-        );
-        if (filteredCourse) {
-          setCourseDetails(filteredCourse);
-        } else {
-          console.error("Product not found");
-        }
-      })
-      .catch((error) => console.log("Error fetching data:", error));
-  }, [id]);
+  const courseDetails = useCourseDetails();
 
   if (!courseDetails) {
     return <div>Loading...</div>;
@@ -72,16 +54,13 @@ function LearnerReviews() {
                 {courseDetails.leanersTotalReviews} reviews
               </ReviewsText>
             </Topline>
-            <StarPyramid>
-              <Starts>
-                <StarRating />
-              </Starts>
-              <StarText></StarText>
-            </StarPyramid>
+            <StarPyramidContainer>
+              <StarPyramid />
+            </StarPyramidContainer>
           </LeftWrapper>
           <RightSection>
-            {courseDetails.leanerReviews.map((item) => (
-              <RightWrapper>
+            {courseDetails.leanerReviews.map((item, index) => (
+              <RightWrapper key={index}>
                 <UserProfile>
                   <ProfilePic>
                     <Image src={item.LeanerImage} alt="User Profile" />
